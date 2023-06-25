@@ -29,7 +29,7 @@
          * Generate a random number between 1 and 20
          */
         generateGameNumber = () => {
-            gameNumber = Math.trunc(Math.random() * 20) + 1;
+            gameNumber = Math.trunc(Math.random() * 100) + 1;
         },
 
         /**
