@@ -113,6 +113,7 @@
             DOM.number.textContent = '?';
             DOM.message.textContent = message.initial;
             DOM.check.disabled ? DOM.check.disabled = false : null;
+            score = 20;
 
             clearSuccess();
         },
