@@ -107,13 +107,21 @@
         },
 
         /**
+         * Resets score
+         */
+        resetScore = () => {
+            score = 20;
+            DOM.score.textContent = score;
+        },
+
+        /**
          * Start a new game
          */
         startNewGame = () => {
             DOM.number.textContent = '?';
             DOM.message.textContent = message.initial;
             DOM.check.disabled ? DOM.check.disabled = false : null;
-            score = 20;
+            resetScore();
 
             clearSuccess();
         },
